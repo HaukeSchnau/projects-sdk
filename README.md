@@ -66,8 +66,10 @@ checks use. The nix-darwin module declares everything it reads itself.
 
 ## Releases
 
-Releases are tags `vMAJOR.MINOR.PATCH`. A release that changes an option, the descriptor schema or
-the provider's API in a way callers notice raises the minor version while the major is 0.
+Releases are lightweight tags `vMAJOR.MINOR.PATCH` on `main` (`git tag v0.2.0 <commit>`). devenv
+2.3.1 locks an annotated tag's object instead of the commit it points to, so `devenv.lock` would
+name another rev than `flake.lock`. A release that changes an option, the descriptor schema or the
+provider's API in a way callers notice raises the minor version while the major is 0.
 
 ## Checks
 
