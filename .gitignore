@@ -1,0 +1,8 @@
+result
+result-*
+*.log
+.direnv/
+.env
+.env.*
+!.env.example
+node_modules/
